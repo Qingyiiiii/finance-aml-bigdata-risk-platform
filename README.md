@@ -30,6 +30,8 @@ datas/HI-Small_accounts.csv
 datas/HI-Small_Patterns.txt
 ```
 
+数据集来源：本项目使用公开的合成 AML 交易数据集 [IBM Transactions for Anti Money Laundering (AML)](https://www.kaggle.com/datasets/ealtman2019/ibm-transactions-for-anti-money-laundering-aml)，对应论文为 [Realistic Synthetic Financial Transactions for Anti-Money Laundering Models](https://arxiv.org/abs/2306.16424)。公开 GitHub 仓库不包含原始 CSV 数据；复现时需要从数据集发布页下载 `HI-Small` 相关文件，放入 `datas/`，并遵守原始数据集的许可、引用和使用条款。本仓库只保留处理代码、配置模板和展示文档。
+
 当前主链路以 `HI-Small` 为准。`Medium` 可作为后续扩容数据，`Large` 不进入默认验收流程。重新复现时需要自行准备同名数据文件，并遵守原始数据集的许可和引用要求。
 
 ## 架构概览

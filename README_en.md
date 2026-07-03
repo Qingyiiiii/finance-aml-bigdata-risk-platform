@@ -30,6 +30,8 @@ datas/HI-Small_accounts.csv
 datas/HI-Small_Patterns.txt
 ```
 
+Dataset source: this project uses the public synthetic AML transaction dataset [IBM Transactions for Anti Money Laundering (AML)](https://www.kaggle.com/datasets/ealtman2019/ibm-transactions-for-anti-money-laundering-aml), associated with the paper [Realistic Synthetic Financial Transactions for Anti-Money Laundering Models](https://arxiv.org/abs/2306.16424). The public GitHub repository does not include the raw CSV dataset. To reproduce the pipeline, download the `HI-Small` files from the dataset page, place them under `datas/`, and follow the original dataset license, citation, and usage terms. This repository keeps only processing code, configuration templates, and display-ready documentation.
+
 The default validation scope is `HI-Small`. `Medium` can be used for later scale-up work. `Large` is outside the default validation flow. To reproduce the project, prepare the same files locally and follow the original dataset license and citation requirements.
 
 ## Architecture
