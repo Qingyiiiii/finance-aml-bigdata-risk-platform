@@ -1,0 +1,23 @@
+project:
+  name: finance_bigdata
+  mode: cluster
+  dataset_family: ibm_aml
+  default_dataset: HI-Small
+
+paths:
+  linux_project_root: /home/common/tmp/finance_bigdata_project
+  hdfs_root: /lakehouse/projects/finance_bigdata
+  hdfs_stage_dir: /lakehouse/projects/finance_bigdata/stage
+  hdfs_run_dir: /lakehouse/projects/finance_bigdata/runs
+
+namespace:
+  spark_catalog: lakehouse
+  hive_database: finance_bigdata
+  kafka_topic_prefix: finance
+  redis_key_prefix: finance_bigdata
+
+publish:
+  source_stage_name: p5_input
+  write_format: iceberg
+  expected_source_scope: HI-Small P3-P4 local outputs
+

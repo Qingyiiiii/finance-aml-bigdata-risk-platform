@@ -1,0 +1,29 @@
+project:
+  name: finance_bigdata
+  mode: local
+  dataset_family: ibm_aml
+  default_dataset: HI-Small
+
+paths:
+  raw_dir: datas
+  output_dir: data/finance_bigdata
+
+datasets:
+  transaction_file: HI-Small_Trans.csv
+  account_file: HI-Small_accounts.csv
+  pattern_file: HI-Small_Patterns.txt
+
+processing:
+  sample_rows: 100000
+  profile_scope: full_hi_small
+  write_parquet_if_available: true
+  dwd_scope: full_hi_small
+  dws_scope: full_hi_small
+  large_transaction_quantile: 0.995
+  large_transaction_min_amount: 1000000
+
+namespace:
+  hdfs_root: /lakehouse/projects/finance_bigdata
+  hive_database: finance_bigdata
+  kafka_topic_prefix: finance
+  redis_key_prefix: finance_bigdata

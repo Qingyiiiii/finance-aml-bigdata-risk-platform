@@ -1,0 +1,29 @@
+# Local IDE and runtime cache
+.idea/
+.agents/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Local raw data and generated evidence
+datas/
+data/
+runs/
+logs/
+*.log
+
+# Local credentials and machine-specific overrides
+passwd/
+.local/
+.env
+*.env
+*.local
+PRIVATE_CREDENTIALS_ENV
+bin/v2_prepare_*_passwords.ps1
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+~$*
